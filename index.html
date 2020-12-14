@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones-JQuery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-4">
+          <button id="B-hide" class="mt-3 btn btn-outline-primary">Hide</button>
+        </div>
+        <div class="col">
+          <h2>Hide</h2>
+          <p id="P-hide">Haz click en el boton para esconder el parrafo usando .hide</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-show" class="mt-3 btn btn-outline-primary">Show</button>
+        </div>
+        <div class="col">
+          <h2>Show</h2>
+          <p id="P-show">Haz click en el boton para ver el parrafo usando .show</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-toggle" class="mt-3 btn btn-outline-primary">toggle</button>
+        </div>
+        <div class="col">
+          <h2>Toggle</h2>
+          <p id="P-toggle">Haz click para esconder o mostrar el parrafo usando .toggle</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-SDn" class="mt-3 btn btn-outline-primary">slideDown</button>
+        </div>
+        <div class="col">
+          <h2>slideDown</h2>
+          <p id="P-SDn">Haz click para hacer aparecer el texto con animacion usando .slideDown</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-SUp" class="mt-3 btn btn-outline-primary">slideUp</button>
+        </div>
+        <div class="col">
+          <h2>slideUp</h2>
+          <p id="P-SUp">Haz click para hacer desaparecer el texto con animacion usando .slideDown</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-ST" class="mt-3 btn btn-outline-primary">slideToggle</button>
+        </div>
+        <div class="col">
+          <h2>slideToggle</h2>
+          <p id="P-ST">Haz click para esconder o mostrar el parrafo usando .slideToggle</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-FI" class="mt-3 btn btn-outline-primary">fadeIn</button>
+        </div>
+        <div class="col">
+          <h2>fadeIn</h2>
+          <p id="P-FI">Haz click en el boton para ver el parrafo usando .fadeIn</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-FO" class="mt-3 btn btn-outline-primary">fadeOut</button>
+        </div>
+        <div class="col">
+          <h2>fadeOut</h2>
+          <p id="P-FO">Haz click en el boton para ver el parrafo usando .fadeOut</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-aC" class="mt-3 btn btn-outline-primary">addClass</button>
+        </div>
+        <div class="col">
+          <h2>addClass</h2>
+          <p id="P-aC">agrega una clase usando .addClass</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-af" class="mt-3 btn btn-outline-primary">after</button>
+        </div>
+        <div class="col">
+          <h2>after</h2>
+          <p id="P-af">agrega una etiqueta abajo de la actual .after</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-be" class="mt-3 btn btn-outline-primary">before</button>
+        </div>
+        <div class="col">
+          <h2>before</h2>
+          <p id="P-be">agrega una etiqueta arriba de la actual .before</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-app" class="mt-3 btn btn-outline-primary">append</button>
+        </div>
+        <div class="col">
+          <h2>append</h2>
+          <p id="P-app">agrega contenido a una etiqueta con .append</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-html" class="mt-3 btn btn-outline-primary">html</button>
+        </div>
+        <div class="col">
+          <h2>html</h2>
+          <p id="P-html">cambia el contenido de una etiqueta usando .html</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-attr" class="mt-3 btn btn-outline-primary">attr</button>
+        </div>
+        <div class="col">
+          <h2>attr</h2>
+          <p id="P-attr">agrega o cambia un atributos con .attr</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-val" class="mt-3 btn btn-outline-primary">val</button>
+        </div>
+        <div class="col">
+          <h2>val</h2>
+          <p id="P-val">devuelve o establece el atributo de valor seleccionado con .val</p>
+          <p id="I-val">nombre: <input type="text" name="user"></p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <button id="B-tx" class="mt-3 btn btn-outline-primary">text</button>
+        </div>
+        <div class="col">
+          <h2>text</h2>
+          <p id="P-tx">cambia el texto de una etiqueta con .text</p>
+        </div>
+      </div>
+    </div>  
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+  </body>
+</html>
